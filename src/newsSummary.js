@@ -16,7 +16,6 @@ function renderHTML(data) {
  // var image = "<img src= data.response.results[i].webUrl   />"
  for (i = 0; i < 5; i++) {
    htmlString += '<li><a href= ' + data.response.results[i].webUrl + '>'+ data.response.results[i].webTitle +'</a></li>' + '<img src=' + data.response.results[i].fields.thumbnail + '>'
-
  }
  newsfeed.innerHTML = htmlString;
 }
